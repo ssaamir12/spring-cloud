@@ -1,0 +1,40 @@
+spring:
+  profiles:
+    active: local
+  data:
+    mongodb:
+      database: pom-test
+      uri: mongodb://localhost:27017/pom-test
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  data:
+    mongodb:
+      uri: mongodb+srv://config-dev-dummy/config-dev?authSource=%24external&authMechanism=MONGODB-AWS&retryWrites=true&w=majority
+      database: pom-dev
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: test
+  data:
+    mongodb:
+      uri: mongodb+srv://config-test-dummy/config-test?authSource=%24external&authMechanism=MONGODB-AWS&retryWrites=true&w=majority
+      database: pom-test
+---
+
+spring:
+  config:
+    activate:
+      on-profile: e2e
+  data:
+    mongodb:
+      uri: mongodb+srv://config-e2e-dummy/config-e2e?authSource=%24external&authMechanism=MONGODB-AWS&retryWrites=true&w=majority
+      database: pom-e2e
+---

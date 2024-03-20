@@ -1,0 +1,24 @@
+{
+  "Parameters": {
+    "CostcentreTag": "test",
+    "EnvironmentTag": "dev",
+    "EmailTag": "test@test.onmicrosoft.com",
+    "ProjectTag": "sc-pom",
+    "LiveTag": "no",
+    "Profile": "dev",
+    "Alias": "live",
+    "VpcId": "vpc-test",
+    "Subnets": "subnet-test,subnet-test",
+    "SubnetId1": "subnet-test",
+    "SubnetId2": "subnet-test",
+    "PermissionsBoundaryPolicy": "config/test-developer",
+    "PrimaryAlertsMailId": "test@test.onmicrosoft.com",
+    "SecondaryAlertsMailId": "test.onmicrosoft.com@uk.teams.ms",
+    "EnableCloudWatchAlarms": "True",
+    "KafkaTriggerEnabled": "True",
+    "KafkaBootStrapServer": "kafka.dev.test-devops.co.uk:6970",
+    "BatchSize": "1000",
+    "KafkaSecretArn": "dummyARN",
+    "KafkaSecretName": "dummySecretName"
+  }
+}
